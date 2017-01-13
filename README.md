@@ -16,7 +16,7 @@ cordova plugin rm cordova.plugin.sonos
 > - Android
 > - iOS
 
-:warning:after installation yuo must add meta in the head section in index.html file:
+:warning:after installation you must add meta in the head section in index.html file:
 ```html
 <meta http-equiv="Content-Security-Policy" content="default-src  'self' 'unsafe-inline' data: gap: 'unsafe-eval'; style-src  'self' 'unsafe-inline'; connect-src  ; script-src  'self' 'unsafe-inline'; media-src *">
 ```
@@ -34,9 +34,11 @@ function error(err){...};
 sonos.findDevise(success,error);
 ```
 > after you have received the answer you must select current device
+
 ```javascript
 sonos.selectDevise(ip);
 ```
+
 > ip - ip adress current devise
 
 :thumbsup: *After this you may use all method in your code.*
