@@ -27,8 +27,8 @@ public class SonosPlugin extends CordovaPlugin {
             String message = args.getString(0);
             this.coolMethod(message, callbackContext);
             return true;
-        }else if (action.equals("foundSonos")){
-            this.foundSonos(callbackContext);
+        }else if (action.equals("findSonos")){
+            this.findSonos(callbackContext);
         }
         return false;
     }
@@ -40,7 +40,7 @@ public class SonosPlugin extends CordovaPlugin {
             callbackContext.error("Expected one non-empty string argument.");
         }
     }
-    private void foundSonos(CallbackContext callbackContext){
+    private void findSonos(CallbackContext callbackContext){
         SonosPlugin.DiscoverCordova d = new SonosPlugin.DiscoverCordova();
         
         try {
